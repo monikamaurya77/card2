@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body id="body">
+        <div id="root">  </div>
+
+        <script type="text/babel"> 
+
+        let mainDivStyle={
+            
+            height:"400px",
+            width:"350px",
+            margin:"100px",
+            marginLeft:"400px",
+            display:"flex",
+            flexDirection:"column",
+            alignItems:"center",
+            justifyContent:"space around",
+            background:"white",
+            borderRadius:"20px"
+            
+        }
+
+        let imgStyle={
+
+            width:"150px",
+            height:"150px",
+            marginTop:"20px",
+            borderRadius:"50%"
+        }
+
+        let midDivStyle={
+
+            display:"flex",
+            alignItems:"center",
+            textAlign:"center",
+            
+            
+        }
+
+        let bodyStyle={
+            backgroundColor:"grey"
+        }
+
+        let body=document.getElementById('body')
+        body.style.background="grey"
+      
+        let mainDiv=<div style={mainDivStyle}>
+                    <img style={imgStyle}src="https://img.freepik.com/free-photo/selfie-young-european-girl-with-wavy-dark-hair-red-sweater-model-hat-glasses-posing_197531-14220.jpg?w=2000"></img>
+                    <h2>Alexandra Caulea</h2>
+                    <p>I enjoy drimkimg a cup of coffee</p>
+                        <div style={midDivStyle}>
+                            
+                            <h4 style={{marginRight:"70px",color:"#9B45E4"}}>172<br></br><span style={{color:"grey"}}>POSTS</span></h4>
+                            <h4 style={{marginRight:"70px",color:"#9B45E4"}}>47<br></br><span style={{color:"grey"}}>POSTS</span></h4>
+                            <h4 style={{color:"#9B45E4"}}>165<br></br><span style={{color:"grey"}}>POSTS</span></h4>
+                            
+                        </div>
+                        <div>
+                            <button style={{background:"#9B45E4",height:"40px",marginBottom:"10px",borderRadius:"5px",border:"none"}}>FOLLOW</button>
+                             <button style={{marginLeft:"60px",background:"#E13A9D",height:"40px",borderRadius:"5px",border:"none"}}>MESSAGE</button>
+                            
+                            
+                            </div>
+                        
+                    </div>
+
+        ReactDOM.render(mainDiv,document.getElementById('root'))
+        
+        
+        
+        
+        
+        
+        </script>
+</body>
+</html>
